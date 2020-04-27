@@ -7,8 +7,8 @@ import javax.persistence.Id;
 public class Product {
     @Id
     int id;
-    String name;
-    String imagePath;
+    public String name;
+    public String imagePath;
 
     public int getId() {
         return id;
