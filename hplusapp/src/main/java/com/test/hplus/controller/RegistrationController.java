@@ -23,7 +23,8 @@ public class RegistrationController {
 
     @InitBinder
     public void initBinder(WebDataBinder binder) {
-        binder.registerCustomEditor(Date.class, "dateOfBirth", new CustomDateEditor(new SimpleDateFormat("yyyy-MM-dd"), true));
+        binder.registerCustomEditor(Date.class, "dateOfBirth",
+                new CustomDateEditor(new SimpleDateFormat("yyyy-MM-dd"), true));
     }
 
     @PostMapping("/registerUser")
