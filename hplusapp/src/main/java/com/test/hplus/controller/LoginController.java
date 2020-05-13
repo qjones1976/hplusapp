@@ -1,6 +1,6 @@
 package com.test.hplus.controller;
 
-import com.test.hplus.ApplicationException;
+import com.test.hplus.exceptions.ApplicationException;
 import com.test.hplus.beans.Login;
 import com.test.hplus.beans.User;
 import com.test.hplus.repository.UserRepository;
@@ -26,9 +26,9 @@ public class LoginController {
         return "search";
     }
 
-    @ExceptionHandler
+/*    @ExceptionHandler(ApplicationException.class)
     public String handleException() {
         System.out.println("in exception handler of login controller");
         return "error";
-    }
+    }*/
 }

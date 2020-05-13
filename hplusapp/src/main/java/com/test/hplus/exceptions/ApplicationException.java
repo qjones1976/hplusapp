@@ -1,4 +1,4 @@
-package com.test.hplus;
+package com.test.hplus.exceptions;
 
 public class ApplicationException extends RuntimeException {
 
